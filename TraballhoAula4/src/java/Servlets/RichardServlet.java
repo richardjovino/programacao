@@ -44,7 +44,7 @@ public class RichardServlet extends HttpServlet {
             out.println("<h3><a href= 'index.html '>Voltar</a></h3");
             out.println("<h1> Richard Gonçalves Jovino </h1>");
             out.println("<h2> Ra 1290482012034 </h2>");
-            out.println("<h3><a href= 'https://github.com/richardjovino/programacao_2.0 '>Github</a></h3");           
+            out.println("<h3><a href= 'https://github.com/richardjovino/programacao'>Github</a></h3");           
             out.println("</body>");
             out.println("</html>");
         }

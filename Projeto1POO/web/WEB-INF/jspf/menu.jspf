@@ -1,0 +1,6 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<b><a href="index.jsp">Identificaçao</a></b> |
+<a href="tabela-price.jsp">Tabela Price</a> |
+<hr/>
+

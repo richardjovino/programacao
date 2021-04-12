@@ -42,32 +42,32 @@
                 <tr>
                     <th>Segunda Feira/Terça Feira- 13:10 às 14:50/16:50 às 18:30</th>
                     <th>Engenharia de Software II</th>
-                    <th><input type="number" name="EP1"/></th>
-                    <th><input type="number" name="EP2"/></th>
+                    <th><input type="number" name="EP1" value="<%=session.getAttribute("session.EP1")%>"/></th>
+                    <th><input type="number" name="EP2" value="<%=session.getAttribute("session.EP2")%>"/></th>
                 </tr>
                 <tr>
                     <th>Segunda Feira - 15:00 às 18:30</th>
                     <th>Programação Orientada a Objetos</th>
-                    <th><input type="number" name="PP1"/></th>
-                    <th><input type="number" name="PP2"/></th>
+                    <th><input type="number" name="PP1"  value="<%=session.getAttribute("session.PP1")%>"/></th>
+                    <th><input type="number" name="PP2" value="<%=session.getAttribute("session.PP2")%>"/></th>
                 </tr>
                 <tr>
                     <th>Terça Feira - 13:10 às 16:40</th>
                     <th>Banco de Dados</th>
-                    <th><input type="number" name="BP1"/></th>
-                    <th><input type="number" name="BP2"/></th>
+                    <th><input type="number" name="BP1" value="<%=session.getAttribute("session.BP1")%>"/></th>
+                    <th><input type="number" name="BP2" value="<%=session.getAttribute("session.BP2")%>"/></th>
                 </tr>
                 <tr>
                     <th>Quarta Feira - 16:50 às 18:30</th>
                     <th>Interação Humano Computador</th>
-                    <th><input type="number" name="IP1"/></th>
-                    <th><input type="number" name="IP2"/></th>
+                    <th><input type="number" name="IP1" value="<%=session.getAttribute("session.IP1")%>"/></th>
+                    <th><input type="number" name="IP2" value="<%=session.getAttribute("session.IP2")%>"/></th>
                 </tr>
                 <tr>
                     <th>Sexta Feira - 13:10 às 16:40</th>
                     <th>Linguagem de Programação IV - INTERNET</th>
-                    <th><input type="number" name="LP1"/></th>
-                    <th><input type="number" name="LP2"/></th>
+                    <th><input type="number" name="LP1" value="<%=session.getAttribute("session.LP1")%>"/></th>
+                    <th><input type="number" name="LP2" value="<%=session.getAttribute("session.LP2")%>"/></th>
                 </tr>
                 
             </table>

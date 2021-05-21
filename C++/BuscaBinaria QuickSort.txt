@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main(int argc, char** argv) {
+int N, NP;
+int total;
+int qp[NP];
+int q;
+cin>>N>>NP;
+int NVP[NP];
+int qe;
+int media;
+if(N >= 1 && N <=20){
+	if(N >= 1 && NP <= 20){
+		for( int i = 0; i < NP; i++){
+			cin>>NVP[i];
+			total += NVP[i];
+		}
+	}
+ }qe = (total / N) + 1;
+ cout<<total<<" "<<qe<<endl;
+	for(int i = 0; i< NP; i++){
+		qp[i] = NVP[i]/qe;
+}
+	for(int i = 0; i<NP; i++){
+		media = NVP[i]/(qp[i] + 1);
+		cout<<media<<endl;
+		cout<<"Partido "<<i+1<<":"<<qp[i]<<endl;
+	}
+
+	return 0;
+}

@@ -1,0 +1,76 @@
+#include <iostream>
+using namespace std;
+
+int esq, dir, pivo, aux;	
+	int particiona (int Vetor[], int inicio, int final ) {
+	esq = inicio;
+	dir = final;
+	pivo = Vetor[inicio];
+	while (esq< dir) {
+	          while(Vetor[esq] <= pivo)
+		esq ++;
+	         while (Vetor[dir] > pivo)
+		dir--;
+	       if(esq < dir) {
+		aux = Vetor[esq];
+		Vetor[esq] = Vetor[dir];
+		Vetor[dir] = aux;
+		}
+}
+Vetor[inicio] = Vetor[dir];
+Vetor [dir] = pivo;
+return dir;      
+}
+void quickSort (int Vetor[], int inicio, int fim) {
+int pivo;
+if(fim > inicio) {
+	pivo = particiona(Vetor, inicio, fim);
+	quickSort (Vetor, inicio, pivo-1);
+	quickSort (Vetor, pivo+1, fim);
+}
+}
+int busca (int Vetor[], int tam, int elem){
+	int i, inicio, meio, final;
+	inicio = 0;
+	final = tam-1;
+	while(inicio <= final){
+		meio = (inicio + final) / 2;
+		if (elem < Vetor[meio])
+			final = meio-1;
+		else if (elem > Vetor[meio])
+			inicio = meio+1;
+			else
+				return meio;
+	}
+		return -1;
+}
+
+int main(int argc, char** argv) {
+	int vetor[9];
+	int elem;
+	
+	for (int i = 0; i<9 ; i++){
+		cout<<"Digite um valor"<<endl;
+		cin>>vetor[i];
+	}
+	quickSort(vetor, 0, 8);
+	cout<<endl;
+	for (int i = 0; i < 9; i++){
+		cout<<vetor[i]<<endl;
+	}
+	cout<<endl;
+	cout<<"Digite qual elemento do vetor voce quer descobrir"<<endl;
+	cin>>elem;
+	
+	if( busca(vetor, 9, elem) != -1)
+		cout<<endl<<"OK\n\n";
+		else
+		cout<<"ERRO\n\n";
+	for (int i = 0  ; i < 9; i++){
+		if (elem == vetor[i]){
+			cout<<"O elemento esta na posicao "<<i+1<<" do vetor"<<endl;
+		}
+	}
+		
+	return 0;
+}

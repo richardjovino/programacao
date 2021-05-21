@@ -21,3 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/Prova/nbproject/private/
+/Prova/build/
+/WebApplication1/nbproject/private/
+/WebApplication1/build/
+/WebApplication1/dist/
+/WebApplication2/nbproject/private/
+/WebApplication2/build/
+/WebApplication2/dist/

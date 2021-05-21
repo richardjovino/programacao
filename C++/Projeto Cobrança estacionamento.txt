@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+class estacionamento{
+	public:
+		
+		int dia, horaEntrada, horaSaida;
+		
+		void SolicitaDados(){
+			cout<<"Digite o Dia, a hora de entrada e a hora de saida"<<endl;
+			cin>>dia>>horaEntrada>>horaSaida;
+		}
+		float calculo(){
+			return (horaSaida - horaEntrada) * 5;
+		}
+};
+int main(int argc, char** argv) {
+	estacionamento pa;
+	
+	pa.SolicitaDados();
+	
+	cout<<"O valor a ser pago e "<<pa.calculo()<<" Reais"<<endl;
+	return 0;
+}

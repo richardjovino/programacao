@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int soma(int a, int b){
+	int r = a + b;
+	return r;
+}
+int mult(int a, int b){
+	int r = a * b;
+	return r;
+}
+float div(float a, float b){
+	float r = a / b;
+	return r;
+}
+int sub(int a, int b){
+	int r = a - b;
+	return r;	
+}
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	int x, y;
+	int z;
+	cout<<"Digite Dois numeros \n\n";
+	cin>>x>>y;
+	
+	do{
+	cout<<"Escolha uma operacao: \n"<<" 1 para Soma \n "<<"2 para Multiplicacao \n"<<" 3 para Divisao \n"<<" 4 para Subtracao \n"<<" 5 para Fim do processo \n\n";
+	cin>>z;
+		switch (z){
+		case 1:
+			cout<<"\n A soma dos numeros e "<<soma(x,y)<<endl<<endl;
+			break ;
+		case 2:
+			cout<<"\n A multiplicacao dos numeros e "<<mult(x,y)<<endl<<endl;
+			break;
+		case 3:
+			cout<<"\n A Divisao dos numeros e "<<div(x,y)<<endl<<endl;
+			break;
+		case 4:
+			cout<<"\n A Subtracao dos numeros e "<<sub(x,y)<<endl<<endl;
+			break;
+		case 5:
+			cout<<"\n Fim do Processo \n\n";
+			break;
+	}
+	
+	} while (z != 5);
+
+	return 0;
+}

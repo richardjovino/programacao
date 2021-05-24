@@ -65,5 +65,9 @@
             <%} %>
         </table>
            <%} %>
+           <br></br> 
+        <br></br>  
+        <br></br>  
+        <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>

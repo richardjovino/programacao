@@ -7,7 +7,7 @@ package br.edu.fatecpg.web;
 
 /**
  *
- * @author rlarg
+ * @author Richard
  */
 public class User {
     private String name;

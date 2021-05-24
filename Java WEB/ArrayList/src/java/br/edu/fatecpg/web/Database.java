@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rlarg
+ * @author Richard
  */
 public class Database {
     private static ArrayList<User> users;

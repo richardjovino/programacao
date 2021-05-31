@@ -1,0 +1,5 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<hr/>
+<div align="center">Desenvolvido por <b>Richard Gonçalves Jovino</b></div>
+<div align="center">Ra: <b>1290482012034</b></div>
